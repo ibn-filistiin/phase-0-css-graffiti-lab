@@ -1,1 +1,43 @@
-/* write your override styles here */
+/* Reset general styles to ensure a clean look */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Override styling for tags with specific IDs */
+#tag-2,
+#tag-3,
+#tag-4,
+#tag-5,
+#tag-6,
+#tag-7 {
+  background-color: transparent !important; /* Remove any background color */
+  border: none !important; /* Remove any border styles */
+  box-shadow: none !important; /* Remove any shadow styles */
+  width: auto !important; /* Reset width */
+  height: auto !important; /* Reset height */
+}
+
+/* Override classes that may have specific styles */
+.slick,
+.wicked {
+  background-color: transparent !important;
+  color: inherit !important;
+  text-shadow: none !important;
+}
+
+/* Ensure children of .parent divs are reset */
+.parent div {
+  background: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Additional styling to create a clean, minimal look */
+#wall {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
